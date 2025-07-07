@@ -609,7 +609,7 @@ public partial class @MyInputSystem: IInputActionCollection2, IDisposable
             ""actions"": [
                 {
                     ""name"": ""Move"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""3e353cb5-db57-4db1-a011-9f4a2885a675"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",

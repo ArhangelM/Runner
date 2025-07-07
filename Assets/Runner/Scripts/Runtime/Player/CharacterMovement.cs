@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -65,7 +64,6 @@ namespace Assets.Runner.Scripts.Runtime.Player
             _characterActions = _inputSystem.Character;
 
             _characterActions.Move.performed += Move;
-            _characterActions.Move.canceled += Move;
             _characterActions.Jump.performed += Jump;
             _characterActions.Run.performed += Run;
             _characterActions.Look.performed += Look;
