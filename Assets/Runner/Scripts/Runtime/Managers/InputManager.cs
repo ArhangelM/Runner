@@ -1,5 +1,5 @@
-﻿using Assets.Runner.Scripts.Common.Signals;
-using Tools.SignalBus;
+﻿using ArhTools.SignalBus;
+using Assets.Runner.Scripts.Common.Signals;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
