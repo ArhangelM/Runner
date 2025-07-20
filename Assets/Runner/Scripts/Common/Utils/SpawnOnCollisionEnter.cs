@@ -10,7 +10,8 @@ namespace Assets.Runner.Scripts.Common.Utils
         {
             var contact = collision.contacts[0];
             var rotation = Quaternion.FromToRotation(Vector3.up, contact.normal);
-            Instantiate(_prefabToSpawn, contact.point, rotation);
+            var obj = Instantiate(_prefabToSpawn, contact.point, rotation);
+            obj.transform.SetParent(collision.transform);
         }
     }
 }
