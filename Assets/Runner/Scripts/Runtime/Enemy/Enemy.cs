@@ -19,6 +19,7 @@ namespace Assets.Runner.Scripts.Runtime.Enemy
 
         private void Start()
         {
+            _meshRenderer.material = _defaultMaterial;
             _actionTimer = new ActionTimer(ResetMaterial);
             SetDestination();
         }
@@ -63,6 +64,7 @@ namespace Assets.Runner.Scripts.Runtime.Enemy
         private async void ResetMaterial()
         {
             await UniTask.SwitchToMainThread();
+            Debug.Log("Resetting material for enemy: " + gameObject.name);
             _meshRenderer.material = _defaultMaterial;
             _actionTimer.Stop();
         }
